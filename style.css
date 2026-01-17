@@ -99,7 +99,8 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 80px; /* Offset for fixed header */
+    padding-top: 80px;
+    /* Offset for fixed header */
     overflow: hidden;
 }
 
@@ -198,7 +199,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.05));
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.05));
 }
 
 /* Contact Section */
@@ -228,7 +229,7 @@ body {
     border-radius: 12px;
     font-weight: 500;
     transition: var(--transition);
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .contact-item:hover {
@@ -244,7 +245,7 @@ body {
     text-align: center;
     color: var(--text-muted);
     font-size: 0.9rem;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Animations */
@@ -253,6 +254,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -264,13 +266,29 @@ body {
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .about-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .nav-links {
-        display: none; /* Simple hiding for mobile for now, can be enhanced with JS */
+        display: none;
+        /* Simple hiding for mobile for now, can be enhanced with JS */
     }
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+    transition: var(--transition);
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
 }
